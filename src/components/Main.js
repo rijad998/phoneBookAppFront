@@ -1,24 +1,30 @@
 import React from "react";
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tabs';
+import Address from './searchComponents/Address';
+import LegalEntities from './searchComponents/LegalEntities';
+import NaturalPeople from './searchComponents/NaturalPeople';
+import PhoneNumber from './searchComponents/PhoneNumber';
 
 function Main() {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ paddingTop: '50px', textAlign: "center" }}>
       <Tabs
         id="controlled-tab-example"
-        activeKey={this.state.key}
-        onSelect={key => this.setState({ key })}
+        // activeKey={this.state.key}
+        // onSelect={key => this.setState({ key })}
       >
         <Tab eventKey="naturalPerson" title="Natural Person">
-          <Sonnet />
+          <NaturalPeople />
         </Tab>
         <Tab eventKey="legalEntity" title="Legal Entity">
-          <Sonnet />
+          <LegalEntities />
         </Tab>
         <Tab eventKey="phoneNumber" title="Phone Number">
-          <Sonnet />
+          <PhoneNumber />
         </Tab>
         <Tab eventKey="address" title="Address">
-          <Sonnet />
+          <Address />
         </Tab>
       </Tabs>
     </div>
