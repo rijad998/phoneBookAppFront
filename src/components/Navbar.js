@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './images/placeholder.jpg'
+import logo from './images/pbalogo.png'
 
 function Navbar(){
     return(
