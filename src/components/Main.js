@@ -26,6 +26,10 @@ function Main() {
         <Tab eventKey="address" title="Address">
           <Address />
         </Tab>
+        <Tab className="searchbar">
+            <input className="search_input" type="text" name="" placeholder="Search..." />
+            <a href="#" className="search_icon"><i className="fas fa-search"></i></a>
+        </Tab>
       </Tabs>
     </div>
   );
